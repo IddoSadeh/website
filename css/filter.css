@@ -50,8 +50,9 @@ ul.filters.filters-tag > li > a {
 }
 
 ul.filters.filters-tag > li.active > a {
-  color: #fff;
-  background-color: rgba(255, 255, 255, 0.8);
+  /* color: #fff;  */
+  /* Control text color with color attribute. Control background color with background color*/
+  background-color: rgb(163, 163, 163, 0.6);
 }
 
 .filters-tag {
