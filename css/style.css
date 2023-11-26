@@ -1,60 +1,30 @@
 @font-face {
-  font-family: 'Montserrat';
+  font-family: icomoon;
   src: url("../fonts/icomoon/icomoon.eot?srf3rx");
-  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"), url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"), url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"), url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
-  font-weight: normal;
-  font-style: normal;
+  src: url("../fonts/icomoon/icomoon.eot?srf3rx#iefix") format("embedded-opentype"),url("../fonts/icomoon/icomoon.ttf?srf3rx") format("truetype"),url("../fonts/icomoon/icomoon.woff?srf3rx") format("woff"),url("../fonts/icomoon/icomoon.svg?srf3rx#icomoon") format("svg");
+  font-weight: 400;
+  font-style: normal
 }
 
 body {
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
   font-size: 14px;
   line-height: 1.7;
   color: #000000;
   background: rgb(255, 255, 255);
-  border-left: 20px solid #fff; /* START white border*/
-  border-right: 20px solid #ffffff; /* END white border*/
+  border-left: 20px solid #ffffff;
+  border-right: 20px solid #ffffff;
+
 }
-@media screen and (max-width: 768px) {
+
+@media screen and (max-width:768px) {
   body {
     border-left: none;
     border-right: none;
   }
 }
 
-/* body:before,
-body:after {
-  content: "";
-  position: fixed;
-  background: #fff;
-  left: 0;
-  right: 0;
-  z-index: 100;
-}
-@media screen and (max-width: 768px) {
-  body:before,
-  body:after {
-    display: none;
-  }
-}
-
-body:before {
-  top: 0;
-  height: 20px;
-}
-
-body:after {
-  bottom: 0;
-  height: 0px;
-}
-
-@media screen and (max-width: 768px) {
-  body {
-    border-left: none;
-    border-right: none;
-  }
-} */
 
 #page {
   position: relative;
@@ -86,63 +56,71 @@ body:after {
 }
 
 a {
-  color: #000000;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
+  color: #a3a3a3;
+  -webkit-transition: .5s;
+  -o-transition: .5s;
+  transition: .5s
 }
 
-a:hover, a:active, a:focus {
-  color: rgb(55, 156, 0);
-  outline: none;
-  text-decoration: none;
+a:active,
+a:focus,
+a:hover {
+  color: #a3a3a3;
+  outline: 0;
+  text-decoration: none
 }
 
 p {
-  margin-bottom: 20px;
+  margin-bottom: 20px
 }
 
-h1,h2,h3,h4,h5,h6,figure {
+figure,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   color: #000;
-  font-family: "Montserrat";
+  font-family: 'Montserrat';
   font-weight: 400;
-  margin: 0 0 20px 0;
+  margin: 0 0 20px 0
 }
 
 ::-webkit-selection {
   color: #fff;
-  background: #ffffff;
+  background: #f95959
 }
 
 ::-moz-selection {
   color: #fff;
-  background: #ffffff;
+  background: #f95959
 }
 
 ::selection {
   color: #fff;
-  background: #ffffff;
+  background: #f95959
 }
 
 .container-wrap {
-  width: 1300px;
-  margin: 0 auto;
+  max-width: 1300px;
+  margin: 0 auto
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (max-width:768px) {
   .container-wrap {
     width: 100%;
-    padding: 0 1em;
+    padding: 0 1em
   }
 }
 
 .fh5co-nav {
-  margin: 4em 0 2em 0;
+  margin: 4em 0 2em 0
 }
 
 @media screen and (max-width: 768px) {
   .fh5co-nav {
-    margin: 2em 0;
+    margin: 2em 0 2em 0
   }
 }
 
@@ -167,9 +145,10 @@ h1,h2,h3,h4,h5,h6,figure {
   display: inline-block;
   padding: 10px 10px;
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-nav #fh5co-logo {
-    font-size: 40px; /* Adjust font size for mobile */
+    font-size: 40px;
   }
 }
 
@@ -203,6 +182,7 @@ h1,h2,h3,h4,h5,h6,figure {
   position: relative;
   background-color: rgba(255, 255, 255, 0.6);
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-nav .menu-1 {
     display: none;
@@ -225,9 +205,11 @@ h1,h2,h3,h4,h5,h6,figure {
   display: inline;
   font-size: 30px;
 }
+
 @media screen and (max-width: 768px) {
   .fh5co-nav ul li {
-    font-size: 20px; /* Adjust font size for mobile */
+    font-size: 20px;
+    /* Adjust font size for mobile */
   }
 }
 
@@ -239,36 +221,19 @@ h1,h2,h3,h4,h5,h6,figure {
   transition: 0.5s;
   color: #000000;
   background-color: rgba(255, 255, 255, 0.6);
-  display: inline-block; /* Ensures the background color covers the entire element */
-  padding: 2px 5px; /* Add padding to create space around the text */
+  display: inline-block;
+  /* Ensures the background color covers the entire element */
+  padding: 2px 5px;
+  /* Add padding to create space around the text */
 }
 
 .fh5co-nav ul li a:hover {
-  color: rgb(213, 213, 213); /* Change text color on hover */
-  background-color: rgba(255, 255, 255, 0.6); /* Change background color on hover */
+  color: rgb(213, 213, 213);
+  /* Change text color on hover */
+  background-color: rgba(255, 255, 255, 0.6);
+  /* Change background color on hover */
 }
 
-/* .fh5co-nav ul li.btn-cta a span {
-  background: #f95959;
-  padding: 4px 10px;
-  display: -moz-inline-stack;
-  display: inline-block;
-  zoom: 1;
-  display: inline;
-  -webkit-transition: 0.3s;
-  -o-transition: 0.3s;
-  transition: 0.3s;
-  -webkit-border-radius: 100px;
-  -moz-border-radius: 100px;
-  -ms-border-radius: 100px;
-  border-radius: 100px;
-}
-
-.fh5co-nav ul li.btn-cta a:hover span {
-  -webkit-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 14px 20px -9px rgba(0, 0, 0, 0.75);
-} */
 
 .fh5co-nav ul li.active>a {
   color: #000000 !important;
@@ -281,119 +246,6 @@ h1,h2,h3,h4,h5,h6,figure {
   transform: translate3d(0, 0, 0);
 }
 
-/* .fh5co-video {
-  overflow: hidden;
-}
-
-@media screen and (max-width: 992px) {
-  .fh5co-video {
-    height: auto; remove height for responsiveness
-    padding-bottom: 56.25%; 16:9 aspect ratio for responsive video
-  }
-}
-
-.fh5co-video a {
-  z-index: 1001;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  margin-top: -45px;
-  margin-left: -45px;
-  width: 90px;
-  height: 90px;
-  display: table;
-  text-align: center;
-  background: #fff;
-  -webkit-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  -moz-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  -ms-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  -o-box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  box-shadow: 0px 14px 30px -15px rgba(0, 0, 0, 0.75);
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  border-radius: 50%;
-}
-
-.fh5co-video a i {
-  text-align: center;
-  display: table-cell;
-  vertical-align: middle;
-  font-size: 40px;
-}
-
-.fh5co-video .overlay {
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  background: rgba(0, 0, 0, 0.3);
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-}
-
-.fh5co-video:hover .overlay {
-  background: rgba(0, 0, 0, 0.7);
-}
-
-.fh5co-video:hover a {
-  -webkit-transform: scale(1.1);
-  -moz-transform: scale(1.1);
-  -ms-transform: scale(1.1);
-  -o-transform: scale(1.1);
-  transform: scale(1.1);
-} */
-
-#fh5co-hero {
-  min-height: 800px;
-  background: #fff url(../images/loader.gif) no-repeat center center;
-  width: 100%;
-  float: left;
-  margin-bottom: 20px;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-hero {
-    min-height: 500px;
-    background-size: cover; /* Ensure the background covers the entire container */
-  }
-}
-
-#fh5co-hero .btn {
-  font-size: 24px;
-}
-
-#fh5co-hero .flexslider {
-  border: none;
-  z-index: 1;
-  margin-bottom: 0;
-}
-
-#fh5co-hero .flexslider .slides {
-  position: relative;
-  overflow: hidden;
-}
-@media screen and (max-width: 768px) {
-  #fh5co-hero .flexslider .slides li {
-    min-height: 500px;
-  }
-}
-
-#fh5co-hero .flexslider .slides li {
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: bottom center;
-  min-height: 800px;
-  position: relative;
-}
-
-@media screen and (max-width: 768px) {
-  #fh5co-hero .flexslider .slides li {
-    min-height: 500px;
-  }
-}
 
 .portfolio-grid {
   width: 100%;
@@ -432,12 +284,9 @@ h1,h2,h3,h4,h5,h6,figure {
   transition: 0.3s;
 }
 
-/* Initial styling for the image */
 .image-container img {
   filter: grayscale(100%);
-  /* Convert the image to black and white */
   transition: filter 0.3s;
-  /* Add a smooth transition effect */
 }
 
 .portfolio-grid .desc {
@@ -491,24 +340,6 @@ h1,h2,h3,h4,h5,h6,figure {
 /* Hover effect to remove the black and white filter */
 .portfolio-grid:hover img {
   filter: none;
-}
-
-.detail h2 {
-  margin-bottom: 10px;
-}
-
-.detail span {
-  display: block;
-  color: #999999;
-  margin-bottom: 30px;
-}
-
-.detail p {
-  font-size: 18px;
-}
-
-input[type="text"] {
-  height: 50px;
 }
 
 .fh5co-social-icons {
@@ -797,29 +628,6 @@ input[type="text"] {
   }
 }
 
-.btn {
-  margin-right: 4px;
-  margin-bottom: 4px;
-  font-family: "Montserrat";
-  font-size: 16px;
-  font-weight: 400;
-  -webkit-border-radius: 1px;
-  -moz-border-radius: 1px;
-  -ms-border-radius: 1px;
-  border-radius: 1px;
-  -webkit-transition: 0.5s;
-  -o-transition: 0.5s;
-  transition: 0.5s;
-  padding: 8px 20px;
-}
-
-.btn:hover,
-.btn:active,
-.btn:focus {
-  box-shadow: none !important;
-  outline: none !important;
-}
-
 .nopadding {
   padding: 0 !important;
   margin: 0 !important;
@@ -915,13 +723,7 @@ input[type="text"] {
   margin-bottom: 30px;
 }
 
-/*------------------------
-  Helper css
---------------------------*/
 
-/*------------------------
-    About Page
---------------------------*/
 .pic-frame {
   position: relative;
   padding-left: 25px;
@@ -929,21 +731,7 @@ input[type="text"] {
   display: inline-block;
 }
 
-/* .pic-frame:after {
-  position: absolute;
-  content: "";
-  width: calc(100% - 25px);
-  height: calc(100% - 25px);
-  bottom: 0;
-  left: 0;
-  border: 2px solid #000;
-  z-index: 1;
-} */
 
-/* work overview section */
-
-
-/* single project page */
 .gallery-row {
   display: flex;
   flex-basis: calc(33.33% - 10px);
@@ -955,7 +743,43 @@ input[type="text"] {
   display: flex;
   flex-direction: row;
 }
+
 /* Remove the margin-right from the last item in each row to prevent excess space */
 .gallery-row .gallery-item:last-child {
   margin-right: 0;
+}
+
+.portfolio-item {
+  width: 100%;
+  height: auto;
+  position: relative;
+  overflow: hidden
+}
+.portfolio-item img {
+  width: 100%;
+  height: auto;
+  display: block
+}
+.two-column-layout {
+  display: flex;
+  justify-content: space-between;
+  gap: 20px
+}
+.left-column {
+  width: 30%;
+  padding: 20px
+}
+.right-column {
+  width: 70%;
+  margin: 10px 20 10px auto;
+  padding: 20px
+}
+@media (max-width:768px) {
+  .two-column-layout {
+    flex-direction: column
+  }
+  .left-column,
+  .right-column {
+    width: 100%
+  }
 }
