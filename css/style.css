@@ -737,10 +737,6 @@ h6 {
   flex-basis: calc(33.33% - 10px);
   /* Adjust the width of each column and consider the gap */
   flex-grow: 1;
-}
-
-.gallery-row {
-  display: flex;
   flex-direction: row;
 }
 
@@ -774,6 +770,11 @@ h6 {
   margin: 10px 20 10px auto;
   padding: 20px
 }
+.right-column img {
+  width: 100%;
+
+}
+
 @media (max-width:768px) {
   .two-column-layout {
     flex-direction: column
